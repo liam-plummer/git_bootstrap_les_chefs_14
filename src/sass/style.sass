@@ -5,8 +5,23 @@
 
 body
     font-family: Ubuntu
-h1
-    color: red
+header
+    img
+        filter: brightness(50%)
+    .carousel-indicators 
+        li
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            &:focus
+                border: 1px solid white
+                padding: 2px
+
+
+    .carousel-control-prev-icon
+        display: none
+    .carousel-control-next
+        display: none
 footer 
     div
         #foot 
