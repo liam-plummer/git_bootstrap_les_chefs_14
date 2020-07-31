@@ -16001,25 +16001,32 @@ readers do not read off random characters that represent icons */
 
 body {
   font-family: Ubuntu;
+  background-image: url(../../public/images/main_bg.jpg);
 }
 
-header img {
-  filter: brightness(50%);
+li {
+  list-style: none;
+  color: white;
 }
-header .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+
+a {
+  color: white;
 }
-header .carousel-indicators li:focus {
-  border: 1px solid white;
-  padding: 2px;
+
+section:last-of-type h3 {
+  font-family: cour;
 }
-header .carousel-control-prev-icon {
-  display: none;
+section:last-of-type .contact {
+  border-radius: 15px;
+  margin: auto;
+  width: 25%;
+  height: 50%;
+  color: white;
+  text-align: center;
 }
-header .carousel-control-next {
-  display: none;
+section:last-of-type .contact hr {
+  left: 10%;
+  right: 10%;
 }
 
 footer div #foot {
