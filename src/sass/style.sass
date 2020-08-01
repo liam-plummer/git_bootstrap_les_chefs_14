@@ -11,7 +11,22 @@ li
     color: white
 a
     color: white
+span 
+    color: red
 section 
+    &:nth-last-of-type(2)
+        background-image: url("../../public/images/testimonials_background.jpg")
+        color: white
+        div
+            &:first-child
+                text-align: center
+                font-family: cour
+            &:nth-child(2)               
+                img 
+                    border-radius: 50%
+                    height: 150px
+                    width: 150px
+                    border: white 3px solid
     &:last-of-type
         h3
             font-family: cour
