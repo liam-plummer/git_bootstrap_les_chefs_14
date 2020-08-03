@@ -7365,6 +7365,10 @@ button.bg-dark:focus {
   width: 200% !important;
 }
 
+.w-15 {
+  width: 15% !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -7387,6 +7391,10 @@ button.bg-dark:focus {
 
 .h-200 {
   height: 200% !important;
+}
+
+.h-15 {
+  height: 15% !important;
 }
 
 .mw-100 {
@@ -16387,6 +16395,15 @@ section:first-of-type .menu h4 {
 section:first-of-type .menu div:nth-child(2) #intro {
   font-size: 12px;
 }
+section:first-of-type .menuItems {
+  border-radius: 50%;
+  height: 100px;
+  border: solid #eaeaea 4px;
+}
+section:first-of-type .carte {
+  border-bottom: 2px dashed grey;
+  margin: 5px;
+}
 section:nth-of-type(2) {
   background-image: url("../../public/images/team_background.jpg");
   color: white;
@@ -16452,7 +16469,7 @@ section:last-of-type .contact {
   border-radius: 15px;
   margin: auto;
   width: 25%;
-  height: 50%;
+  height: 25%;
   color: white;
   text-align: center;
 }
