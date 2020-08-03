@@ -14,6 +14,27 @@ a
 span 
     color: red
 section 
+    &:first-of-type
+        .menu
+            margin: 25px 10%
+            background-color: white
+            h4
+                font-family: cour
+            div
+                &:nth-child(2)
+                    #intro
+                        font-size:  12px
+                    
+    &:nth-of-type(2)
+        background-image: url("../../public/images/team_background.jpg")
+        color: white
+        h4 
+            font-family: cour
+        .row
+            .col
+                .chef
+                    height: 150px
+                    width: 100px
     &:nth-last-of-type(3)
         .booking
             margin: 25px 10%
