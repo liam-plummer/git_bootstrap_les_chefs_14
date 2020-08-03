@@ -16398,6 +16398,15 @@ section:nth-last-of-type(3) .booking .form form select {
 section:nth-last-of-type(3) .booking .form button {
   border-radius: 15px;
 }
+section:nth-last-of-type(3) .booking .blog {
+  border: solid #e1e0e0 5px;
+  border-radius: 15px;
+  width: 350px;
+  height: 200px;
+}
+section:nth-last-of-type(3) .booking .blog button {
+  border-radius: 25px;
+}
 section:nth-last-of-type(2) {
   background-image: url("../../public/images/testimonials_background.jpg");
   color: white;
