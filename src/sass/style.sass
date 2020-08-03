@@ -14,13 +14,32 @@ a
 span 
     color: red
 section 
+    &:nth-last-of-type(3)
+        .booking
+            margin: 25px 10%
+            background-color: white
+            .text
+                font-family: cour
+            .form
+                background-image: url("../../public/images/book_table_bg.jpg")
+                color: white
+                border-radius: 10px
+                form
+                    input
+                        border-radius: 15px
+                    select 
+                        border-radius: 15px
+                button
+                    border-radius: 15px
     &:nth-last-of-type(2)
         background-image: url("../../public/images/testimonials_background.jpg")
         color: white
+        h4 
+            font-size: 40px  
+            font-family: cour
         div
             &:first-child
                 text-align: center
-                font-family: cour
             &:nth-child(2)               
                 img 
                     border-radius: 50%
