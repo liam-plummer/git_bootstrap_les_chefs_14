@@ -10295,11 +10295,11 @@ h3 {
 }
 @font-face {
   font-family: "Ubuntu";
-  src: url("../../public/fonts/Ubuntu-Regular.ttf");
+  src: url("../../public/fonts/Ubuntu/Ubuntu-Regular.ttf");
 }
 @font-face {
   font-family: "Cour";
-  src: url("../../public/fonts/Courgette-Regular.ttf");
+  src: url("../../public/fonts/courgette/Courgette-Regular.ttf");
 }
 /*!
  * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
