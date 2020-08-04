@@ -7369,6 +7369,10 @@ button.bg-dark:focus {
   width: 15% !important;
 }
 
+.w-150 {
+  width: 150% !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -7395,6 +7399,10 @@ button.bg-dark:focus {
 
 .h-15 {
   height: 15% !important;
+}
+
+.h-150 {
+  height: 150% !important;
 }
 
 .mw-100 {
@@ -16367,6 +16375,42 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+header {
+  height: 600px;
+}
+header li:hover {
+  background-color: red;
+}
+header p {
+  font-size: 60px;
+  font-family: cour;
+  color: white;
+}
+header p .premier {
+  text-transform: uppercase;
+  color: white;
+}
+header p .deuxieme {
+  text-transform: uppercase;
+}
+header p .troisieme {
+  color: white;
+}
+header .carousel {
+  height: max-content;
+}
+header .carousel .carousel-control-prev {
+  display: none;
+}
+header .carousel .carousel-control-next {
+  display: none;
+}
+header .carousel .carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
 body {
   font-family: Ubuntu;
   background-image: url(../../public/images/main_bg.jpg);
@@ -16403,6 +16447,10 @@ section:first-of-type .menuItems {
 section:first-of-type .carte {
   border-bottom: 2px dashed grey;
   margin: 5px;
+}
+section:first-of-type .meal {
+  font-family: cour;
+  font-size: 20px;
 }
 section:nth-of-type(2) {
   background-image: url("../../public/images/team_background.jpg");
@@ -16441,9 +16489,15 @@ section:nth-last-of-type(3) .booking .blog {
   border-radius: 15px;
   width: 350px;
   height: 200px;
+  position: relative;
 }
 section:nth-last-of-type(3) .booking .blog button {
   border-radius: 25px;
+}
+section:nth-last-of-type(3) .booking .blg {
+  position: absolute;
+  top: 175px;
+  left: 25px;
 }
 section:nth-last-of-type(2) {
   background-image: url("../../public/images/testimonials_background.jpg");
@@ -16461,6 +16515,12 @@ section:nth-last-of-type(2) div:nth-child(2) img {
   height: 150px;
   width: 150px;
   border: white 3px solid;
+  padding: 0 0;
+}
+section:nth-last-of-type(2) div .txt-box {
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 15px;
 }
 section:last-of-type h3 {
   font-family: cour;

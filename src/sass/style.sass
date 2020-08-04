@@ -3,6 +3,35 @@
 @import "../sass/_fonts.sass"
 @import "../sass/_icons.sass"
 
+header
+
+    height: 600px
+    li:hover
+        background-color: red
+    p
+        font-size: 60px
+        font-family: cour
+        color: white
+        .premier
+            text-transform: uppercase
+            color: white
+        .deuxieme
+            text-transform: uppercase
+        .troisieme
+            color: white
+    .carousel   
+        height: max-content 
+        .carousel-control-prev
+            display: none
+        .carousel-control-next
+            display: none
+        .carousel-indicators
+
+                li 
+                    height: 15px
+                    width: 15px
+                    border-radius: 50%
+
 body
     font-family: Ubuntu
     background-image: url(../../public/images/main_bg.jpg)    
@@ -31,7 +60,9 @@ section
         .carte
             border-bottom: 2px dashed grey
             margin: 5px
-
+        .meal
+            font-family: cour 
+            font-size: 20px
     &:nth-of-type(2)
         background-image: url("../../public/images/team_background.jpg")
         color: white
@@ -64,8 +95,13 @@ section
                 border-radius: 15px
                 width: 350px
                 height: 200px  
+                position: relative
                 button
                     border-radius: 25px
+            .blg
+                position: absolute
+                top: 175px
+                left: 25px
     &:nth-last-of-type(2)
         background-image: url("../../public/images/testimonials_background.jpg")
         color: white
@@ -81,6 +117,11 @@ section
                     height: 150px
                     width: 150px
                     border: white 3px solid
+                    padding: 0 0
+            .txt-box
+                margin-left: 4px
+                margin-right: 4px
+                border-radius: 15px
     &:last-of-type
         h3
             font-family: cour
