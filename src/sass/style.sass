@@ -4,34 +4,71 @@
 @import "../sass/_icons.sass"
 
 header
+    
+    position: relative
+    &::before
+        content: ""
+        display: block
+        width: 100%
+        height: 100%
+        background-color: #333
+        background-image: url("../../public/images/banner1.jpg")
+        position: absolute
+        
+        z-index: -1
+        background-size: cover
+        top: 0
+        left: 0
+        filter: brightness(35%)
+    
+    nav
+        div
+            ul
+                li
+                    border-top: 1px solid white
+                    border-bottom: 1px solid white
+                    &:nth-of-type(5)
+                        border: 0
 
-    height: 600px
-    li:hover
-        background-color: red
-    p
-        font-size: 60px
-        font-family: cour
-        color: white
-        .premier
-            text-transform: uppercase
-            color: white
-        .deuxieme
-            text-transform: uppercase
-        .troisieme
-            color: white
-    .carousel   
-        height: max-content 
-        .carousel-control-prev
-            display: none
-        .carousel-control-next
-            display: none
+        
+                    &:hover
+                        background-color: #C42D40
+                        &:nth-child(5)
+                            background-color: transparent
+                       
+    div
+        padding-bottom: 70px
         .carousel-indicators
-
-                li 
-                    height: 15px
-                    width: 15px
-                    border-radius: 50%
-
+            
+            li
+                border-radius: 100%
+                border: none
+                padding: 8px
+                width: 0
+                height: 0
+        
+        a
+            .carousel-control-prev-icon
+                background-image: none
+            
+            .carousel-control-next-icon
+                background-image: none
+        div
+            
+            div
+                
+                h1
+                    font-family: cour
+                    padding: 0 380px
+                    color: white
+                    
+                div
+                    button
+                        border-radius: 30px
+                        border: none
+                        padding: 15px 20px
+    .bordure
+        height: 12px
 body
     font-family: Ubuntu
     background-image: url(../../public/images/main_bg.jpg)    
@@ -53,7 +90,7 @@ section
             div
                 &:nth-child(2)
                     #intro
-                        font-size:  12px
+                        font-size: 12px
         .menuItems
             border-radius: 50%
             height: 100px
@@ -64,6 +101,9 @@ section
         .meal
             font-family: cour 
             font-size: 20px
+            width: 100%
+            &:hover
+                border-right: solid red 5px
     &:nth-of-type(2)
         background-image: url("../../public/images/team_background.jpg")
         color: white
@@ -147,7 +187,51 @@ footer
                     color: white
     
 @media (max-width: 568px)
+    nav
+        div
+            ul
+                li
+                    &:nth-of-type(5)
+                        border: 0
+                            display: none
     section 
+        &:nth-of-type(2)
+            .row
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                .col
+                    width: 100%
+        &:nth-last-of-type(3)
+            .booking
+                display: flex
+                flex-direction: column
+                align-items: center
+                form 
+                    width: 75%
+                .row
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+        &:nth-last-of-type(2)
+            .text
+                display: flex
+                flex-direction: column
+                justify-content: center
+            .row
+                display: flex
+                flex-direction: column
+                align-items: center
+                .col
+                    width: 100%
+                .txt-box
+                    width: 100%
+                    height: 50%
+                    text-align: center
+                    margin-top: 10px
+                    margin-bottom: 10px
+                    
         &:last-of-type
             .contact
                 width: 90%
@@ -159,3 +243,14 @@ footer
             .col :
                 width: 75%
                 margin-top: 15px
+
+
+// @media (min-width: 568px) and (max-width: 768px)  
+//     footer 
+//         width: 100%
+//         .row
+//             display: flex
+//             width: 100%
+//             .col :
+//                 width: 50%
+//                 margin-top: 15px
