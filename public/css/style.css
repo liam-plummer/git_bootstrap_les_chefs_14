@@ -16611,7 +16611,7 @@ footer div div div .fab {
     flex-direction: column;
     align-items: center;
   }
-  section:nth-last-of-type(2) .row .col {
+  section:nth-last-of-type(2) .row .tst {
     width: 100%;
   }
   section:nth-last-of-type(2) .row .txt-box {
@@ -16640,21 +16640,6 @@ footer div div div .fab {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  section:nth-of-type(2) .row {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-  section:nth-of-type(2) .row .col {
-    width: 50%;
-  }
-  section:nth-of-type(2) .row .txt-box {
-    width: 50%;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }
 
