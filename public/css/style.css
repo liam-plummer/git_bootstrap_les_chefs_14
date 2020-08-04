@@ -16497,7 +16497,7 @@ section:nth-last-of-type(3) .booking .blog button {
 section:nth-last-of-type(3) .booking .blg {
   position: absolute;
   top: 175px;
-  left: 25px;
+  left: 35px;
 }
 section:nth-last-of-type(2) {
   background-image: url("../../public/images/testimonials_background.jpg");
@@ -16543,6 +16543,22 @@ footer div #foot {
 }
 footer div div div .fab {
   color: white;
+}
+
+@media (max-width: 568px) {
+  section:last-of-type .contact {
+    width: 90%;
+  }
+
+  footer {
+    width: 100%;
+  }
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    .col-width: 75%;
+    .col-margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
