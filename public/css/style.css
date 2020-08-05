@@ -16573,9 +16573,21 @@ footer div div div .fab {
 }
 
 @media (max-width: 768px) {
-  nav div ul li:nth-of-type(5) {
-    border: 0;
-    border-display: none;
+  nav div .navbar-nav li {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  nav div .navbar-nav li:nth-of-type(5) {
+    order: -1;
+    margin-bottom: 5px;
+  }
+
+  div div .ct {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+    padding: 0;
   }
 
   section:nth-of-type(2) .row {
@@ -16590,7 +16602,12 @@ footer div div div .fab {
   section:nth-last-of-type(3) .booking {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+  }
+  section:nth-last-of-type(3) .booking .tm {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   section:nth-last-of-type(3) .booking form {
     width: 75%;
@@ -16599,6 +16616,14 @@ footer div div div .fab {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  section:nth-last-of-type(3) .booking .row .col {
+    width: 100%;
+  }
+  section:nth-last-of-type(3) .booking .mk {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   section:nth-last-of-type(2) .text {
     display: flex;

@@ -177,7 +177,7 @@ section
                 left: 10%
                 right: 10%
 
-footer 
+footer
     div
         #foot 
             background-image: url($footer-img)
@@ -189,11 +189,23 @@ footer
 @media (max-width: 768px)
     nav
         div
-            ul
-                li
+            .navbar-nav
+                li           
+                    border-top: 0
+                    border-bottom: 0
                     &:nth-of-type(5)
-                        border: 0
-                            display: none
+                        order: -1 
+                        margin-bottom: 5px
+    div
+        div
+            .ct
+                display: flex
+                flex-wrap: wrap
+                margin: auto
+                width: 50%
+                padding: 0
+                    
+                
     section 
         &:nth-of-type(2)
             .row
@@ -207,13 +219,23 @@ footer
             .booking
                 display: flex
                 flex-direction: column
-                align-items: center
+                justify-content: center
+                .tm
+                    display: flex
+                    justify-content: space-between
+                    width: 100%
                 form 
                     width: 75%
                 .row
                     display: flex
                     flex-direction: column
                     align-items: center
+                    .col
+                        width: 100%
+                .mk
+                    display: flex
+                    justify-content: space-between
+                    width: 100%
         &:nth-last-of-type(2)
             .text
                 display: flex
