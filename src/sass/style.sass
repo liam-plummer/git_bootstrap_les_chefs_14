@@ -143,7 +143,7 @@ section
             .blg
                 position: absolute
                 top: 175px
-                left: 135px
+                left: 115px
     &:nth-last-of-type(2)
         background-image: url("../../public/images/testimonials_background.jpg")
         color: white
@@ -207,31 +207,34 @@ footer
                     
                 
     section 
-        &:nth-of-type(2)
-            .row
+        &:first-of-type
+        .menu
+            display: flex
+            flex-direction: column
+            width: 100%
+            .txt
+                display: flex
+                justify-content: space-between
+                width: 100% 
+        .container
+            .col-12
                 display: flex
                 flex-direction: column
-                align-items: center
                 width: 100%
-                .col
-                    width: 100%
+
+        
         &:nth-last-of-type(3)
             .booking
                 display: flex
                 flex-direction: column
-                justify-content: center
                 .tm
                     display: flex
                     justify-content: space-between
-                    width: 100%
+                    width: 25%
                 form 
-                    width: 75%
-                .row
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    .col
-                        width: 100%
+                    width: 100%
+                    padding: 25px
+                    margin: auto
                 .mk
                     display: flex
                     justify-content: space-between

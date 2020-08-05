@@ -16525,7 +16525,7 @@ section:nth-last-of-type(3) .booking .blog button {
 section:nth-last-of-type(3) .booking .blg {
   position: absolute;
   top: 175px;
-  left: 135px;
+  left: 115px;
 }
 section:nth-last-of-type(2) {
   background-image: url("../../public/images/testimonials_background.jpg");
@@ -16590,35 +16590,34 @@ footer div div div .fab {
     padding: 0;
   }
 
-  section:nth-of-type(2) .row {
+  section .menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
   }
-  section:nth-of-type(2) .row .col {
+  section .menu .txt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section .container .col-12 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   section:nth-last-of-type(3) .booking {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   section:nth-last-of-type(3) .booking .tm {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 25%;
   }
   section:nth-last-of-type(3) .booking form {
-    width: 75%;
-  }
-  section:nth-last-of-type(3) .booking .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  section:nth-last-of-type(3) .booking .row .col {
     width: 100%;
+    padding: 25px;
+    margin: auto;
   }
   section:nth-last-of-type(3) .booking .mk {
     display: flex;
