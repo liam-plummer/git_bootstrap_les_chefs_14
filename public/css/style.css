@@ -16525,7 +16525,7 @@ section:nth-last-of-type(3) .booking .blog button {
 section:nth-last-of-type(3) .booking .blg {
   position: absolute;
   top: 175px;
-  left: 35px;
+  left: 135px;
 }
 section:nth-last-of-type(2) {
   background-image: url("../../public/images/testimonials_background.jpg");
@@ -16545,9 +16545,8 @@ section:nth-last-of-type(2) div:nth-child(2) img {
   border: white 3px solid;
   padding: 0 0;
 }
-section:nth-last-of-type(2) div .txt-box {
-  margin-left: 4px;
-  margin-right: 4px;
+section:nth-last-of-type(2) div:nth-child(2) .txt-box {
+  margin: 2px;
   border-radius: 15px;
 }
 section:last-of-type h3 {
@@ -16573,7 +16572,7 @@ footer div div div .fab {
   color: white;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
   nav div ul li:nth-of-type(5) {
     border: 0;
     border-display: none;
@@ -16635,11 +16634,18 @@ footer div div div .fab {
     .col-margin-top: 15px;
   }
 }
-@media (min-width: 568px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   section:nth-of-type(2) .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  footer .row {
+    display: flex;
+    width: 100%;
+    .col-width: 50%;
+    .col-margin-top: 15px;
   }
 }
 
