@@ -286,7 +286,27 @@ footer
 
 @media (min-width: 768px) and (max-width: 992px)  
     
-    &:first-of-type
+    nav
+        div
+            .navbar-nav
+                li           
+                    border-top: 0
+                    border-bottom: 0
+                    &:nth-of-type(5)
+                        order: -1 
+                        margin-bottom: 5px
+    div
+        div
+            .ct
+                display: flex
+                flex-wrap: wrap
+                margin: auto
+                width: 50%
+                padding: 0
+                    
+                
+    section 
+        &:first-of-type
             .menu
                 display: flex
                 flex-direction: column
@@ -299,10 +319,7 @@ footer
                             position: absolute                     
                             top: 0
                             left: 0
-                        .mtr
-                            position: absolute
-                            top: 0
-                            right: 0               
+                                     
                 .container
                     .col-12
                         display: flex
@@ -327,10 +344,10 @@ footer
                     width: 100%
                     padding: 25px
                     margin: auto
-                .mk
-                    display: flex
-                    justify-content: space-between
-                    width: 100%
+                .col-6
+                    .blg
+                        left: 230px
+
         &:nth-last-of-type(2)
             .text
                 display: flex
@@ -338,20 +355,21 @@ footer
                 justify-content: center
             .row
                 display: flex
-                flex-direction: column
-                align-items: center
+                justify-content: center
+                
+                width: 100%
                 .tst
-                    width: 100%
+                    width: 50%
+                    margin-right: 25px
                 .txt-box
-                    width: 100%
+                    width: 25%
                     height: 50%
                     text-align: center
-                    margin-top: 10px
-                    margin-bottom: 10px
+                   
                     
         &:last-of-type
             .contact
-                width: 90%
+                width: 75%
     footer 
         width: 100%
         div
